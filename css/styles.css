@@ -27,7 +27,8 @@
 
     --project-card-set-gap: 30px;
 }
-
+/* ----------------------------------- */
+/* ----------------------------------- */
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-background-color);
@@ -56,14 +57,15 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
-
+/* -------------------------------- */
+/* --------------------------------- */
 /* header */
 
 .page-header {
     border-bottom: 1px solid var(--header-border-color);
 }
 
-.main-nav {
+.container--main-nav {
     display: flex;
     align-items: center;
 }
@@ -72,12 +74,13 @@ img {
     display: flex;
 }
 
-.bloc-nav .logo {
+.bloc-nav__logo {
     display: block;
     padding-top: 24px;
     padding-bottom: 25px;
 }
-
+/* -------------------------------- */
+/* -------------------------------- */
 .logo {
     color: var(--primary-accent-color);
     font-family: 'Raleway';
@@ -89,10 +92,11 @@ img {
     text-decoration: none;
 }
 
-.logo-studio {
+.logo__accent {
     color: var(--secondary-text-color);
 }
-
+/* -------------------------------- */
+/* --------------------------------- */
 .navigation {
     list-style: none;
 
@@ -100,11 +104,11 @@ img {
     margin-left: 93px;
 }
 
-.navigation .item + .item {
+.navigation__item + .navigation__item {
     margin-left: 50px;
 }
 
-.navigation-link {
+.navigation__link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -121,15 +125,15 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-link:hover, .navigation-link:focus {
+.navigation__link:hover, .navigation__link:focus {
     color: var(--primary-accent-color);
 }
 
-.navigation-link.current {
+.navigation__link--current {
     color: var(--primary-accent-color);
 }
 
-.navigation-link.current::after {
+.navigation__link--current::after {
     content: "";
     display: block;
     height: 4px;
@@ -148,11 +152,11 @@ img {
     margin-left: auto;
 }
 
-.contact .item + .item {
+.contact__item + .contact__item {
     margin-left: 30px;
 }
     
-.contact-link {
+.contact__link {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -169,16 +173,17 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover, .contact-link:focus {
+.contact__link:hover, .contact__link:focus {
     color: var(--primary-accent-color);
 }
 
-.contact-link .icon {
+.contact__icon {
     fill: currentColor;
     
     margin-right: 10px;
 }
-
+/* ---------------------------------- */
+/* ----------------------------------- */
 /* main Студія */
 
 /* Секція "hero" */
@@ -190,7 +195,7 @@ img {
     padding: 200px 0;
 }
 
-.overlay {
+.hero--overlay {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -203,7 +208,7 @@ img {
     background-size: cover;
 }
 
-.hero-title {
+.hero__title {
     color: var(--accent-text-color);
     font-weight: 900;
     font-size: 44px;
@@ -216,7 +221,7 @@ img {
     margin-bottom: 30px;
 }
 
-.hero-btn {
+.hero__btn {
     color: var(--accent-text-color);
     background-color: var(--primary-accent-color);
     cursor: pointer;
@@ -236,10 +241,11 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
     background-color: var(--secondary-accent-color);
 }
-   
+ /*--------------------------  */
+
 /* Секція "advantage" */
 
 .visually-hidden {
@@ -652,26 +658,30 @@ img {
     padding-bottom: 60px;
 }
 
-/* footer --- bloc-residence */
-
-.page-footer .logo-studio {
-    color: var(--accent-text-color);
-}
-
 .footer-contact {
     display: flex;
     align-items: baseline;
 }
+
+/* footer --- bloc-residence */
 
 .bloc-residence {
     display: block;
     margin-right: 70px;
 }
 
-.footer-contact .logo {
+.bloc-residence__logo {
     display: inline-block;
     margin-bottom: 20px;
 }
+
+.bloc-residence__logo__accent {
+    color: var(--accent-text-color);
+}
+
+
+
+
 
 .residence {
     font-style: normal;
