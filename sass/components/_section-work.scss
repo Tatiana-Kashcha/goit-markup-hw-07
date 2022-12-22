@@ -22,7 +22,7 @@
     justify-content: space-between;
 }
 
-.work-list__item + .work-list__item {
+.work-list__item:not(:first-child) {
     margin-left: 30px;
 }
 

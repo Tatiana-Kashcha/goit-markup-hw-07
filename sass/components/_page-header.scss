@@ -26,7 +26,7 @@
     margin-left: 93px;
 }
 
-.navigation__item + .navigation__item {
+.navigation__item:not(:first-child) {
     margin-left: 50px;
 }
 
@@ -74,7 +74,7 @@
     margin-left: auto;
 }
 
-.contact__item + .contact__item {
+.contact__item:not(:first-child) {
     margin-left: 30px;
 }
     

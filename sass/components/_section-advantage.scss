@@ -10,7 +10,7 @@
     flex-basis: 270px;
 }
 
-.advantage-list__item + .advantage-list__item {
+.advantage-list__item:not(:first-child) {
     margin-left: 30px;
 }
 

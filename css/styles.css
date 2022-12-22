@@ -104,7 +104,7 @@ img {
     margin-left: 93px;
 }
 
-.navigation__item + .navigation__item {
+.navigation__item:not(:first-child) {
     margin-left: 50px;
 }
 
@@ -152,10 +152,10 @@ img {
     margin-left: auto;
 }
 
-.contact__item + .contact__item {
+.contact__item:not(:first-child) {
     margin-left: 30px;
 }
-    
+
 .contact__link {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -273,7 +273,7 @@ img {
     flex-basis: 270px;
 }
 
-.advantage-list__item + .advantage-list__item {
+.advantage-list__item:not(:first-child) {
     margin-left: 30px;
 }
 
@@ -331,7 +331,7 @@ img {
     justify-content: space-between;
 }
 
-.work-list__item + .work-list__item {
+.work-list__item:not(:first-child) {
     margin-left: 30px;
 }
 
@@ -393,7 +393,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list__item + .team-list__item {
+.team-list__item:not(:first-child) {
    margin-left: 30px; 
 }
 
@@ -429,15 +429,15 @@ img {
     justify-content: center;
 }
 
-.social-list .item {
+.social-list__item {
     display: flex; 
 }
 
-.social-list .item + .item {
+.social-list__item:not(:first-child) {
     margin-left: 10px;
 }
 
-.icon-social {
+.social-list__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -452,16 +452,16 @@ img {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-social:hover, .icon-social:focus {
+.social-list__link:hover, .social-list__link:focus {
     color: var(--accent-text-color);
     background-color: var(--primary-accent-color);
 }
 
-.icon-social .icon {
+.social-list__icon {
     display: block;
     fill: currentColor;
 }
-
+/* ------------------------------- */
 /* Секція "clients" */
 
 .clients-title {
@@ -482,15 +482,15 @@ img {
     justify-content: center;
 }
 
-.clients-list .item {
+.clients-list__item {
     display: flex; 
 }
 
-.clients-list .item + .item {
+.clients-list__item:not(:first-child) {
     margin-left: 30px;
 }
 
-.icon-clients {
+.clients-list__link {
     width: 170px;
     height: 92px;
     border: 1px solid var(--svg-primary-color);
@@ -506,16 +506,16 @@ img {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-clients:hover, .icon-clients:focus {
+.clients-list__link:hover, .clients-list__link:focus {
     color: var(--primary-accent-color);
     border-color: var(--primary-accent-color);
 }
 
-.icon-clients .icon {
+.clients-list__icon {
     display: block;
     fill: currentColor;
 }
-
+/* ----------------------------------------- */
 
 /* main Портфоліо */
 
@@ -681,10 +681,6 @@ img {
     color: var(--accent-text-color);
 }
 
-
-
-
-
 .residence {
     font-style: normal;
 }
@@ -735,7 +731,7 @@ img {
     margin-right: 93px;
 }
 
-.title-join {
+.bloc-join__title {
     color: var(--accent-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -746,16 +742,16 @@ img {
     margin-bottom: 20px;
 }
 
-.join {
+.bloc-join__slogan {
     font-style: normal; 
 }
 
-.bloc-join .icon-social {
+.bloc-join__social-list__link {
     color: var(--accent-text-color);
     background-color: var(--footer-social-background-color);
 }
 
-.bloc-join .icon-social:hover, .bloc-join .icon-social:focus {
+.bloc-join__social-list__link:hover, .bloc-join__social-list__link:focus {
     background-color: var(--primary-accent-color);
 }
 
