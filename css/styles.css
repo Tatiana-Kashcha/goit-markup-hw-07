@@ -244,8 +244,9 @@ img {
 .hero__btn:hover, .hero__btn:focus {
     background-color: var(--secondary-accent-color);
 }
- /*--------------------------  */
+/*--------------------------  */
 
+/* ---------------------------- */
 /* Секція "advantage" */
 
 .visually-hidden {
@@ -260,22 +261,23 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
-
+/* ----------------------------- */
+/* ----------------------------- */
 .advantage-list {
     list-style: none;
 
     display: flex;
 }
 
-.advantage-list .item {
+.advantage-list__item {
     flex-basis: 270px;
 }
 
-.advantage-list .item + .item {
+.advantage-list__item + .advantage-list__item {
     margin-left: 30px;
 }
 
-.icon-advantage {
+.advantage-list__icon {
     width: 270px;
     height: 120px;
     background-color: var(--secondary-background-color);
@@ -288,7 +290,7 @@ img {
     align-items: center;
 }
 
-.advantage-list-title {
+.advantage-list__title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -299,15 +301,15 @@ img {
     margin-bottom: 10px;
 }
 
-.advantage-list-descr {
+.advantage-list__descr {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
+/* --------------------------- */
 /* Секція "work" */
 
-.work {
+.section--work {
     padding-top: 0;
 }
 
@@ -329,15 +331,15 @@ img {
     justify-content: space-between;
 }
 
-.work-list .item + .item {
+.work-list__item + .work-list__item {
     margin-left: 30px;
 }
 
-.work-box {
+.work-list__box {
     position: relative;
 }
 
-.work-item-title {
+.work-list__title {
     color: var(--accent-text-color);
     background-color: var(--work-overlay-color);
     font-weight: 700;
@@ -355,10 +357,10 @@ img {
     left: 0;
     bottom: 0;
 }
-
+/* ------------------------------- */
 /* Секція "team" */
 
-.team {
+.section--team {
     background-color: var(--secondary-background-color);
 }
 
@@ -380,7 +382,7 @@ img {
     justify-content: space-between;
 }
 
-.team-item {
+.team-list__item {
     background-color: var(--primary-background-color);
     border-radius: 0px 0px 4px 4px;
 
@@ -391,16 +393,16 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-item + .team-item {
+.team-list__item + .team-list__item {
    margin-left: 30px; 
 }
 
-.team-card {
+.team-list__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.team-list-title {
+.team-list__title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -410,14 +412,14 @@ img {
     margin-bottom: 10px;
 }
 
-.team-list-descr {
+.team-list__descr {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 
     margin-bottom: 16px;
 }
-
+/* ------------------------ */
 /* секція "team", блок --- social-list*/
 
 .social-list {
