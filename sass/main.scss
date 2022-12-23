@@ -2,12 +2,12 @@
 @import "./utils/base";
 @import "./components/logo";
 @import "./components/page-header";
-@import "./components/section-hero";
+@import "./components/index-section-hero";
 @import "./components/visually-hidden";
-@import "./components/section-advantage";
-@import "./components/section-work";
-@import "./components/section-team";
+@import "./components/index-section-advantage";
+@import "./components/index-section-work";
+@import "./components/index-section-team";
 @import "./components/social-list";
-@import "./components/section-clients";
-
-
+@import "./components/index-section-clients";
+@import "./components/page-footer";
+@import "./components/modal";

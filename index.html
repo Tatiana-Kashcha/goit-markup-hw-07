@@ -20,7 +20,7 @@
   
     <!--header-->
     <header class="page-header">
-        <div class="container container--main-nav">
+        <div class="container container--header">
             
             <nav class="bloc-nav">
                 <a class="logo bloc-nav__logo" href="./index.html">
@@ -421,7 +421,7 @@
 
     <!--footer-->
     <footer class="page-footer">
-        <div class="container footer-contact">
+        <div class="container container--footer">
     
             <div class="bloc-residence">
                 <a class="logo bloc-residence__logo" href="./index.html">
@@ -429,12 +429,12 @@
                 </a>
 
                 <address class="residence">
-                    <ul class="residence-contact">
-                        <li class="item"><a class="residence-descr" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                    <ul class="residence-list">
+                        <li class="residence-list__item"><a class="residence-list__descr" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
                             rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
                         </li>
-                        <li class="item"><a class="residence-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="item"><a class="residence-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="residence-list__item"><a class="residence-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="residence-list__item"><a class="residence-list__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
@@ -481,13 +481,13 @@
             </div>
 
             <div class="bloc-send">
-                <p class="title-send">Підпишіться на розсилку</p>
+                <p class="bloc-send__title">Підпишіться на розсилку</p>
 
-                <form class="bloc-form">
+                <form class="bloc-send__form">
                     <input type="email" name="send-mail" id="send-mail" placeholder="E-mail">
 
-                    <button class="send-btn-submit" type="submit">Підписатися
-                        <svg class="icon" width="24" height="24">
+                    <button class="bloc-send__btn-submit" type="submit">Підписатися
+                        <svg class="bloc-send__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button> 
@@ -500,62 +500,61 @@
     </footer>
         
     <!--Модальне вікно-->
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal-hero">
-            <button data-modal-close class="modal-btn-close" type="button">
-                <svg class="icon-close" width="18" height="18">
+    <div class="backdrop backdrop--is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="modal__btn-close" type="button">
+                <svg class="modal__icon-close" width="18" height="18">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
 
-            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
 
-            <form class="modal-form">
-
-                <label class="form-field" for="name">Ім'я
+            <form class="form">
+                <label class="form__field" for="name">Ім'я
                     <input  type="text" name="name" id="name">
 
-                    <svg class="icon" width="18" height="18">
+                    <svg class="form__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
                 </label>
                 
-                <label class="form-field" for="tel">Телефон
+                <label class="form__field" for="tel">Телефон
                     <input type="tel" name="tel" id="tel">
 
-                    <svg class="icon" width="18" height="18">
+                    <svg class="form__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
                 </label>
 
-                <label class="form-field" for="mail">Пошта
+                <label class="form__field" for="mail">Пошта
                     <input type="email" name="mail" id="mail">
 
-                    <svg class="icon" width="18" height="18">
+                    <svg class="form__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-email-black"></use>
                     </svg>
                 </label>
                 
-                <label class="form-field last" for="comment">Коментар
+                <label class="form__field form__field--last" for="comment">Коментар
                     <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
                 </label>
                 
-                <div class="form-check">
+                <div class="form__check">
                     <label for="check">Погоджуюся з розсилкою та приймаю
                         <input type="checkbox" name="check" value="checked" id="check">
-                        <svg class="icon" width="16" height="15">
+                        <svg class="form__icon-check" width="16" height="15">
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
                     </label>
                     
-                    <div class="contract-check">
-                        <a class="contract" href="">Умови договору</a>
+                    <div class="form__contract-check">
+                        <a class="form__link-contract" href="">Умови договору</a>
                     </div>
 
                 </div>
 
-                <div class="modal-btn">
-                    <button class="modal-btn-submit" type="submit">Відправити</button>
+                <div class="form__bloc-btn">
+                    <button class="form__btn-submit" type="submit">Відправити</button>
                 </div>   
 
             </form>

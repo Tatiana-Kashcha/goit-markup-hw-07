@@ -18,7 +18,7 @@
 
     <!--header-->
     <header class="page-header">
-        <div class="container container--main-nav">
+        <div class="container container--header">
             
             <nav class="bloc-nav">
                 <a class="logo bloc-nav__logo" href="./index.html">
@@ -298,20 +298,20 @@
 
     <!--footer-->
    <footer class="page-footer">
-        <div class="container footer-contact">
+        <div class="container container--footer">
     
             <div class="bloc-residence">
-                <a class="logo" href="./index.html">
-                    Web<span class="logo-accent">Studio</span>
+                <a class="logo bloc-residence__logo" href="./index.html">
+                    Web<span class="logo__accent bloc-residence__logo__accent">Studio</span>
                 </a>
 
                 <address class="residence">
-                    <ul class="residence-contact">
-                        <li class="item"><a class="residence-descr" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                    <ul class="residence-list">
+                        <li class="residence-list__item"><a class="residence-list__descr" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
                             rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
                         </li>
-                        <li class="item"><a class="residence-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="item"><a class="residence-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="residence-list__item"><a class="residence-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="residence-list__item"><a class="residence-list__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
@@ -320,7 +320,7 @@
                 <h3 class="bloc-join__title"><em class="bloc-join__slogan">Приєднуйтесь</em></h3>
 
                 <!-- Блок --- social-list -->
-                
+
                 <ul class="social-list">
                     <li class="social-list__item">
                         <a class="social-list__link bloc-join__social-list__link" aria-label="Instagram" href="">
@@ -358,13 +358,13 @@
             </div>
 
             <div class="bloc-send">
-                <p class="title-send">Підпишіться на розсилку</p>
+                <p class="bloc-send__title">Підпишіться на розсилку</p>
 
-                <form class="bloc-form">
-                    <input type="email" name="mail" id="mail" placeholder="E-mail">
+                <form class="bloc-send__form">
+                    <input type="email" name="send-mail" id="send-mail" placeholder="E-mail">
 
-                    <button class="send-btn-submit" type="submit">Підписатися
-                        <svg class="icon" width="24" height="24">
+                    <button class="bloc-send__btn-submit" type="submit">Підписатися
+                        <svg class="bloc-send__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button> 
