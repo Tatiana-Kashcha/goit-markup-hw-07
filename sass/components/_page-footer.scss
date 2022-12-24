@@ -123,7 +123,7 @@
     display: flex;
 }
 
-.bloc-send__form input {
+.bloc-send__input {
     color: var(--accent-text-color);
     background-color: var(--footer-background-color);
     font-size: 16px;
@@ -140,7 +140,7 @@
     margin-right: 12px;
 }
 
-.bloc-send__form input::placeholder {
+.bloc-send__input::placeholder {
     color: var(--link-text-color);
     font-size: 16px;
     line-height: 1.25;
