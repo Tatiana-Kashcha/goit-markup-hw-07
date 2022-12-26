@@ -16,38 +16,38 @@
     
     display: flex;
     justify-content: center;
-}
 
-.clients-list__item {
-    display: flex; 
-}
+    &__item {
+        display: flex; 
+    }
 
-.clients-list__item:not(:first-child) {
-    margin-left: 30px;
-}
+    &__item:not(:first-child) {
+        margin-left: 30px;
+    }
 
-.clients-list__link {
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--svg-primary-color);
-    border-radius: 4px;
-    color: var(--svg-primary-color) ;
+    &__link {
+        width: 170px;
+        height: 92px;
+        border: 1px solid var(--svg-primary-color);
+        border-radius: 4px;
+        color: var(--svg-primary-color) ;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    transition:
-    color 250ms var(--cubic-bezier), 
-    border-color 250ms var(--cubic-bezier);
-}
+        transition:
+        color 250ms var(--cubic-bezier), 
+        border-color 250ms var(--cubic-bezier);
+    }
 
-.clients-list__link:hover, .clients-list__link:focus {
-    color: var(--primary-accent-color);
-    border-color: var(--primary-accent-color);
-}
+    &__link:hover, &__link:focus {
+        color: var(--primary-accent-color);
+        border-color: var(--primary-accent-color);
+    }
 
-.clients-list__icon {
-    display: block;
-    fill: currentColor;
+    &__icon {
+        display: block;
+        fill: currentColor;
+    }
 }
