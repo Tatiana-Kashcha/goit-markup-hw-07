@@ -753,6 +753,9 @@ img {
 }
 
 /* ---Блок form--- */
+.form {
+  display: block;
+}
 .form__field {
   color: var(--primary-text-color);
   font-size: 12px;
@@ -763,11 +766,9 @@ img {
   margin-bottom: 10px;
   position: relative;
 }
-
 .form__field--last {
   margin-bottom: 20px;
 }
-
 .form__input {
   margin: 0;
   padding-left: 42px;
@@ -778,17 +779,14 @@ img {
   margin-top: 4px;
   transition: border-color 250ms var(--cubic-bezier), outline 250ms var(--cubic-bezier);
 }
-
 .form__input:focus {
   border-color: var(--primary-accent-color);
   outline: 0.1px var(--primary-accent-color);
   outline-style: solid;
 }
-
 .form__input:focus + .form__icon {
   fill: var(--primary-accent-color);
 }
-
 .form__icon {
   fill: var(--title-text-color);
   position: absolute;
@@ -796,7 +794,6 @@ img {
   margin-left: 12px;
   transition: fill 250ms var(--cubic-bezier);
 }
-
 .form__textarea {
   padding: 12px 16px;
   height: 120px;
@@ -806,41 +803,35 @@ img {
   border-radius: 4px;
   transition: border-color 250ms var(--cubic-bezier), outline 250ms var(--cubic-bezier);
 }
-
 .form__textarea:focus {
   border-color: var(--primary-accent-color);
   outline: 0.1px var(--primary-accent-color);
   outline-style: solid;
 }
-
 .form__textarea::-moz-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--form-placeholder-color);
 }
-
 .form__textarea:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--form-placeholder-color);
 }
-
 .form__textarea::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--form-placeholder-color);
 }
-
 .form__check {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   position: relative;
 }
-
 .form__label-check {
   font-size: 14px;
   line-height: 1.71;
@@ -851,7 +842,6 @@ img {
   position: relative;
   padding-left: 35px;
 }
-
 .form__input-check {
   position: absolute;
   white-space: nowrap;
@@ -865,12 +855,10 @@ img {
           clip-path: inset(50%);
   margin: -1px;
 }
-
 .form__input-check:checked + .form__icon-check {
   background-color: var(--primary-accent-color);
   border: transparent;
 }
-
 .form__icon-check {
   margin-left: 12px;
   fill: var(--accent-text-color);
@@ -881,12 +869,10 @@ img {
   left: 0;
   transition: background-color 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
 }
-
 .form__contract-check {
   position: relative;
   margin-left: 5px;
 }
-
 .form__link-contract {
   font-size: 14px;
   line-height: 1.71;
@@ -894,7 +880,6 @@ img {
   color: var(--primary-accent-color);
   text-decoration: none;
 }
-
 .form__link-contract::after {
   content: "";
   display: block;
@@ -905,12 +890,10 @@ img {
   left: 0;
   bottom: 5.5px;
 }
-
 .form__bloc-btn {
   display: flex;
   justify-content: center;
 }
-
 .form__btn-submit {
   color: var(--accent-text-color);
   background-color: var(--primary-accent-color);
@@ -927,7 +910,6 @@ img {
   box-shadow: 0px 4px 4px var(--btn-shadow-color);
   transition: background-color 250ms var(--cubic-bezier);
 }
-
 .form__btn-submit:hover {
   background-color: var(--secondary-accent-color);
 }/*# sourceMappingURL=main.css.map */

@@ -918,6 +918,10 @@ img {
 /* ----------------------------------- */
 /* ---Блок form--- */
 
+.form {
+    display: block;
+}
+
 .form__field {
     color: var(--primary-text-color);
     font-size: 12px;
