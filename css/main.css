@@ -35,12 +35,14 @@
   --form-footer-border-color: rgba(255, 255, 255, 0.3);
   --project-card-set-gap: 30px;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --font-family-basic: Roboto, sans-serif;
+  --font-family-special: "Raleway";
 }
 
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
-  font-family: Roboto, sans-serif;
+  font-family: var(--font-family-basic);
 }
 
 /* Глобальне скидання стилів по тегам*/
@@ -66,10 +68,24 @@ img {
   padding: 0 15px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* Логотип */
 .logo {
   color: var(--primary-accent-color);
-  font-family: "Raleway";
+  font-family: var(--font-family-special);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -213,20 +229,6 @@ img {
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--secondary-accent-color);
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
 }
 
 /* Секція "advantage" */
@@ -457,7 +459,7 @@ img {
   padding: 6px 22px;
   transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
 }
-.filter-listt__btn:hover, .filter-list__btn:focus {
+.filter-list__btn:hover, .filter-list__btn:focus {
   color: var(--accent-text-color);
   background-color: var(--primary-accent-color);
   box-shadow: var(--filter-shadow-color);

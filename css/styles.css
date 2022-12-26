@@ -38,13 +38,16 @@
 
     --project-card-set-gap: 30px;
     --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+    --font-family-basic: Roboto, sans-serif;
+    --font-family-special: 'Raleway';
 }
 /* ----------------------------------- */
 /* ----------------------------------- */
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-background-color);
-    font-family: Roboto, sans-serif;
+    font-family: var(--font-family-basic);
 }
 
 /* Глобальне скидання стилів по тегам*/
@@ -69,6 +72,20 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /* -------------------------------- */
 /* --------------------------------- */
 /* header */
@@ -95,7 +112,7 @@ img {
 /* -------------------------------- */
 .logo {
     color: var(--primary-accent-color);
-    font-family: 'Raleway';
+    font-family: var(--font-family-special);
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -259,21 +276,6 @@ img {
 /*--------------------------  */
 
 /* ---------------------------- */
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-/* ----------------------------- */
-/* ----------------------------- */
 /* Секція "advantage" */
 
 .advantage-list {

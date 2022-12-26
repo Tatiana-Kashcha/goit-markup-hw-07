@@ -35,7 +35,7 @@
         box-shadow 250ms var(--cubic-bezier);
     }
 
-    &t__btn:hover, &__btn:focus {
+    &__btn:hover, &__btn:focus {
         color: var(--accent-text-color);
         background-color: var(--primary-accent-color);
 
