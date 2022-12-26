@@ -259,7 +259,6 @@ img {
 /*--------------------------  */
 
 /* ---------------------------- */
-/* Секція "advantage" */
 
 .visually-hidden {
     position: absolute;
@@ -275,6 +274,8 @@ img {
 }
 /* ----------------------------- */
 /* ----------------------------- */
+/* Секція "advantage" */
+
 .advantage-list {
     list-style: none;
 
@@ -572,8 +573,8 @@ img {
     box-shadow: var(--filter-shadow-color);
 }
 /* ----------------------------------- */
-/* ----Блок project-list-------- */
 /* ----------------------------------- */
+/* ----Блок project-list-------- */
 .project-list {
     list-style: none;
 
