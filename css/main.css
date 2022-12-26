@@ -77,7 +77,6 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-
 .logo__accent {
   color: var(--secondary-text-color);
 }
@@ -186,7 +185,6 @@ img {
   text-align: center;
   padding: 200px 0;
 }
-
 .hero--overlay {
   max-width: 1600px;
   margin-left: auto;
@@ -196,7 +194,6 @@ img {
   background-position: center;
   background-size: cover;
 }
-
 .hero__title {
   color: var(--accent-text-color);
   font-weight: 900;
@@ -208,7 +205,6 @@ img {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-
 .hero__btn {
   color: var(--accent-text-color);
   background-color: var(--primary-accent-color);
@@ -225,7 +221,6 @@ img {
   box-shadow: 0px 4px 4px var(--btn-shadow-color);
   transition: background-color 250ms var(--cubic-bezier);
 }
-
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--secondary-accent-color);
 }
@@ -249,15 +244,12 @@ img {
   list-style: none;
   display: flex;
 }
-
 .advantage-list__item {
   flex-basis: 270px;
 }
-
 .advantage-list__item:not(:first-child) {
   margin-left: 30px;
 }
-
 .advantage-list__icon {
   width: 270px;
   height: 120px;
@@ -268,7 +260,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .advantage-list__title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -278,7 +269,6 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
 .advantage-list__descr {
   font-size: 14px;
   line-height: 1.71;
